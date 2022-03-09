@@ -1,0 +1,60 @@
+@import "variables.scss";
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+// extend
+%flex-center-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+// @extend %flex-center-center;
+
+
+// header
+header{
+    width: 100%;
+    height: 100vh;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: $secondary-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    .mine{
+        color: $main-color;
+    }
+    .logo{
+        width: 30%;
+        aspect-ratio: 1/1;
+        background-color: aliceblue;
+    }
+    .nav_header{
+        ul{
+            margin: 0;
+            li{
+                text-align: center;
+                color: $main-color;
+                list-style: none;
+                display: inline;
+                cursor: pointer;
+                &:hover{
+                    animation: blur;
+                    animation-duration: 0.5s;
+                    animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+                }
+            }
+            a{
+                margin: 20px;
+                text-decoration: none;
+            }
+        }
+    }
+}
