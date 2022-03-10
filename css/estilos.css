@@ -13,7 +13,7 @@ header {
   height: 100vh;
   padding-top: 30px;
   padding-bottom: 30px;
-  background-color: #626262;
+  background-color: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,24 +29,31 @@ header {
           align-items: center;
 }
 header .mine {
-  color: #7082D6;
+  color: white;
 }
 header .logo {
   width: 30%;
   aspect-ratio: 1/1;
-  background-color: aliceblue;
+  background-color: white;
 }
-header .nav_header ul {
+header .nav ul {
   margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-header .nav_header ul li {
+header .nav ul li {
   text-align: center;
-  color: #7082D6;
+  color: white;
   list-style: none;
   display: inline;
   cursor: pointer;
 }
-header .nav_header ul li:hover {
+header .nav ul li:hover {
   -webkit-animation: blur;
           animation: blur;
   -webkit-animation-duration: 0.5s;
@@ -54,7 +61,197 @@ header .nav_header ul li:hover {
   -webkit-animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
           animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
-header .nav_header ul a {
+header .nav ul a {
   margin: 20px;
   text-decoration: none;
+}
+
+.about {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.about .about_nav {
+  width: 50%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about .about_nav .nav ul {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about .about_nav .nav ul li {
+  text-align: center;
+  color: white;
+  list-style: none;
+  display: inline;
+  cursor: pointer;
+}
+.about .about_nav .nav ul li:hover {
+  -webkit-animation: blur;
+          animation: blur;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+          animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.about .about_nav .nav ul a {
+  margin: 20px;
+  text-decoration: none;
+}
+.about .info {
+  width: 50%;
+  background-color: white;
+}
+
+.porfolio {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.porfolio .left {
+  width: 50%;
+  background-color: white;
+  position: relative;
+}
+.porfolio .left .porfolio_nav {
+  border: 1px solid black;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.porfolio .left .porfolio_nav .nav ul {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.porfolio .left .porfolio_nav .nav ul li {
+  text-align: center;
+  color: #333;
+  list-style: none;
+  display: inline;
+  cursor: pointer;
+}
+.porfolio .left .porfolio_nav .nav ul li:hover {
+  -webkit-animation: blur;
+          animation: blur;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+          animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.porfolio .left .porfolio_nav .nav ul a {
+  margin: 20px;
+  text-decoration: none;
+}
+.porfolio .trabajos {
+  width: 50%;
+  background-color: #333;
+}
+.porfolio .trabajos .work {
+  height: 100vh;
+  border: 1px solid white;
+}
+
+.contact {
+  width: 100%;
+  height: 35vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contact .contact_nav {
+  width: 50%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contact .contact_nav .nav ul {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contact .contact_nav .nav ul li {
+  text-align: center;
+  color: white;
+  list-style: none;
+  display: inline;
+  cursor: pointer;
+}
+.contact .contact_nav .nav ul li:hover {
+  -webkit-animation: blur;
+          animation: blur;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+          animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.contact .contact_nav .nav ul a {
+  margin: 20px;
+  text-decoration: none;
+}
+.contact .info {
+  width: 50%;
+  background-color: white;
 }
