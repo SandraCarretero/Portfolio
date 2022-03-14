@@ -3,6 +3,9 @@
 *{
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0;
     font-family: 'Lato', sans-serif;
@@ -16,6 +19,22 @@ body{
 }
 // @extend %flex-center-center;
 
+
+// return
+.return{
+    position: fixed;
+    z-index: 100;
+    bottom: 40px;
+    right: 40px;
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    mix-blend-mode: exclusion;
+    border-radius: 50%;
+    cursor: pointer;
+    @extend %flex-center-center;
+    text-align: center;
+}
 
 // header
 header{
@@ -130,9 +149,32 @@ header{
         .work{
             height: 100vh;
             border: 1px solid white;
+            cursor: pointer;
+        }
+    }
+    &.description{
+        .porfolio_nav{
+            
+        }
+        .trabajos{
+            // flex-grow: ;
+            // animation: aumenta;
+            // animation-duration: 0.5s;
+            // animation-fill-mode: both;
+            // animation-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
         }
     }
 }
+
+@keyframes aumenta{
+    0%{
+        width: 50%;
+    }
+    100%{
+        width: 75%;
+    }
+}
+
 
 .contact{
     width: 100%;
